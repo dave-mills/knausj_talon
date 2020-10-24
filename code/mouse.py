@@ -197,7 +197,6 @@ class Actions:
         if setting_mouse_hide_mouse_gui.get() == 0:
             gui_wheel.show()
 
-<<<<<<< HEAD
     def copy_mouse_position():
         """Copy the current mouse position coordinates"""
         position = ctrl.mouse_pos()
@@ -207,7 +206,6 @@ class Actions:
         """move the mouse cursor to the center of the currently active window"""
         rect = ui.active_window().rect
         ctrl.mouse_move(rect.left + (rect.width / 2), rect.top + (rect.height / 2))
-=======
     def mouse_pop_off():
         """toggles mouse pop off"""
         user.mouse_enable_pop_click.set(0)
@@ -215,7 +213,6 @@ class Actions:
     def mouse_pop_on():
         """toggles mouse pop on"""
         user.mouse_enable_pop_click.set(1)
->>>>>>> master
 
 
 def show_cursor_helper(show):
